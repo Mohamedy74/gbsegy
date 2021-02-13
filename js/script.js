@@ -1,7 +1,6 @@
 "use strict";
 (function () {
     var
-        map, mapOptions, marker, position,
         userAgent = navigator.userAgent.toLowerCase(),
         initialDate = new Date(),
         $document = $(document),
@@ -89,7 +88,7 @@
         return this;
     }
     $window.on('load', function () {
-        initialize(51.508742, -0.120850);
+        // initialize(51.508742, -0.120850);
         if (plugins.preloader.length && !isNoviBuilder) {
             pageTransition({
                 target: document.querySelector('.page'),
